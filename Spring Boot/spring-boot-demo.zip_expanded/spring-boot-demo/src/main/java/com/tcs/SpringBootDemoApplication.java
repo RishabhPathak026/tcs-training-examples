@@ -3,15 +3,20 @@ package com.tcs;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+<<<<<<< HEAD
 // This annotation takes care auto-configuration based on the libraries
 // e.g.: If your project has spring boot starter web - the @SpringBootApplication does
 // component scanning from the package it is present & also all of its sub-packages
 // auto-configures the application based on the library - 
 // providing server, configuring web components, configuring database dependencies
+=======
+
+>>>>>>> 0b37b6f05a5e974533d9510117a7d9f12193da60
 @SpringBootApplication
 public class SpringBootDemoApplication  {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		// it launches the spring application and performs all the auto-configuration
 		SpringApplication.run(SpringBootDemoApplication.class, args);
 	}
@@ -32,5 +37,11 @@ public class SpringBootDemoApplication  {
 //	}
 	// the above code is similar to ApplicationContext ctx = new ClasspathXmlApplicationContext(xmlfile);
 	// HelloService service = (HelloService)ctx.getBean("helloService")
+=======
+		
+		SpringApplication.run(SpringBootDemoApplication.class, args);
+	}
+	
+>>>>>>> 0b37b6f05a5e974533d9510117a7d9f12193da60
 	
 }
