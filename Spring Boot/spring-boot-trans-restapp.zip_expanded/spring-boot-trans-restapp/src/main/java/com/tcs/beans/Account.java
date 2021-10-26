@@ -1,5 +1,7 @@
 package com.tcs.beans;
 
+import java.time.LocalDate;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +21,7 @@ public class Account {
 	@Column(name = "password")
 	private String password;
 	@Column(name = "dob")
-	private String dob;
+	private LocalDate dob;
 	@Column(name = "balance")
 	private double balance;
 	public int getAccountId() {
@@ -37,10 +39,10 @@ public class Account {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getDob() {
+	public LocalDate getDob() {
 		return dob;
 	}
-	public void setDob(String dob) {
+	public void setDob(LocalDate dob) {
 		this.dob = dob;
 	}
 	public void setUsername(String username) {
