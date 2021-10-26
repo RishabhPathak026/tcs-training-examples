@@ -1,0 +1,10 @@
+server:
+ port: 9090
+ # context path gives the main application path, where all the endpoints are part of this path
+ servlet:    context-path: /my-app
+spring:
+ datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  password: 1234
+  url: jdbc:mysql://localhost:3306/tcs_db
+  username: root
